@@ -1,0 +1,249 @@
+/* ===== Variables (Exercise 01) ===== */
+:root {
+    --navy: #0a0e1a;
+    --electric-blue: #2f6fed;
+    --white: #ffffff;
+    --grey-light: #f2f4f8;
+    --grey-text: #4a5568;
+    --radius: 10px;
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+/* ===== Reset (homework) ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background: var(--white);
+    color: var(--navy);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+}
+
+/* Global link colour (homework) */
+a {
+    color: var(--electric-blue);
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: var(--radius);
+}
+
+/* Max-width containers (homework) */
+section {
+    padding: 4rem 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ===== Header / Nav ===== */
+/* Sticky header (homework) */
+header {
+    position: sticky;
+    top: 0;
+    background: var(--white);
+    border-bottom: 1px solid #e2e8f0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--electric-blue);
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--navy);
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: var(--electric-blue);
+}
+
+/* ===== Hero (Exercise 02 + homework flex-wrap/reorder) ===== */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding-top: 4rem;
+}
+
+.hero-text {
+    flex: 1 1 400px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-text h2 {
+    color: var(--electric-blue);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    color: var(--grey-text);
+    margin-bottom: 1.5rem;
+    max-width: 40ch;
+}
+
+.hero-image {
+    flex: 1 1 280px;
+    max-width: 320px;
+}
+
+/* Circular hero image (homework) */
+.hero-image img {
+    border-radius: 50%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius);
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--electric-blue);
+    color: var(--white);
+}
+
+/* ===== About ===== */
+#about p {
+    color: var(--grey-text);
+    max-width: 70ch;
+    margin-bottom: 1rem;
+}
+
+/* ===== Skills Grid (Exercise 03, auto-fit via homework) ===== */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-card {
+    background: var(--white);
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius);
+    padding: 1.5rem;
+}
+
+.skill-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--electric-blue);
+}
+
+.skill-card p {
+    color: var(--grey-text);
+}
+
+/* ===== Projects Grid (Exercise 04) ===== */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: var(--white);
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius);
+    padding: 1rem;
+}
+
+.project-card img {
+    margin-bottom: 1rem;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    width: 100%;
+}
+
+.project-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.project-card p {
+    color: var(--grey-text);
+    margin-bottom: 0.5rem;
+}
+
+.tech-tags {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    color: var(--grey-text);
+    border-top: 1px solid #e2e8f0;
+}
+
+/* ===== Responsive (Responsive Challenge homework) ===== */
+@media (max-width: 720px) {
+    /* Nav: stack instead of overflowing. No toggle button yet — that's
+       Mission 03, once the hamburger button exists. A stacked, always-
+       visible nav is the honest stopping point here. */
+    nav {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.75rem;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    .hero-text p {
+        max-width: none;
+    }
+}

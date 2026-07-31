@@ -1,0 +1,37 @@
+/* Projects Grid — starter
+   Same idea as skills-grid.css. Fixed columns for now; auto-fit comes in
+   homework. */
+
+.projects-grid {
+  display: grid;
+  /* TODO: grid-template-columns — try repeat(2, 1fr) or repeat(3, 1fr) */
+  /* TODO: add a gap */
+}
+
+.project-card {
+  /* TODO: background color (match .skill-card) */
+  /* TODO: border */
+  /* TODO: border-radius (use var(--radius)) */
+  /* TODO: padding */
+}
+
+.project-card img {
+  /* TODO: aspect-ratio: 16 / 9; */
+  /* TODO: object-fit: cover; */
+  /* TODO: width: 100%; */
+  /* TODO: margin-bottom so it doesn't touch the title */
+}
+
+.project-card h3 {
+  /* TODO: margin-bottom */
+}
+
+.project-card p {
+  /* TODO: muted text color, e.g. var(--grey-text) */
+  /* TODO: margin-bottom */
+}
+
+.tech-tags {
+  /* TODO: smaller font-size */
+  /* TODO: font-weight */
+}

@@ -1,0 +1,47 @@
+/* Continues from Mission 02 — keep your existing body/hero/skills rules from before. */
+/* Carries forward Mission 02 — keep your :root, body, hero, and
+   skills-grid rules from before. */
+
+/* Exercise 02: Interactive Navigation */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* TODO: style the hamburger bars.
+  
+   on .nav-toggle span */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.nav-toggle span {
+
+}
+
+/* TODO: make .nav-links a flex row by default (desktop) */
+.nav-links {
+
+}
+
+/* IMPORTANT: this button is display: none right now on purpose — it
+   only appears inside the media query below. Shrink your browser
+   window (or use DevTools' device toolbar) to see it. */
+@media (max-width: 720px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  /* TODO: hide .nav-links by default at this width, then show it
+     when JS adds the 'open' class:
+
+   */
+}

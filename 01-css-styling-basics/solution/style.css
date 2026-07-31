@@ -1,0 +1,57 @@
+:root {
+  --navy: #0a0e1a;
+  --electric-blue: #2f6fed;
+  --white: #ffffff;
+  --grey-light: #f2f4f8;
+  --grey-text: #4a5568;
+  --radius: 10px;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+body {
+  background: var(--white);
+  color: var(--navy);
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+}
+
+/* BOX MODEL CHECK: padding adds space INSIDE an element, between its
+   border and its content — the section itself gets bigger, and the
+   background colour extends into that space. margin adds space
+   OUTSIDE an element, between it and its neighbours — the background
+   colour does NOT extend into a margin. */
+section {
+  padding: 2rem 1.5rem;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--electric-blue);
+}
+
+/* CASCADE CHECK — same selector, same specificity, so the rule that's
+   LAST in the file wins: the second body{color} rule below overrides
+   the first, so body text renders navy, not black. */
+/*
+body { color: black; }
+body { color: navy; }
+*/
+
+/* MEDIA QUERY AWARENESS (homework covers implementation): a media query
+   is a conditional CSS block that only applies when the browser window
+   matches some condition, most often a width:
+
+   @media (max-width: 600px) { ... }
+
+   At this stage the nav and Hero text don't rearrange themselves yet on
+   a narrow screen — that's expected, and it's exactly what the
+   Responsive Challenge homework fixes. */

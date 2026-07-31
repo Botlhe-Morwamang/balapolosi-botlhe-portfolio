@@ -1,0 +1,22 @@
+/* Add this to your existing style.css — continues from Exercises 01-02 */
+
+/* TODO: make .skills-grid a grid container.
+
+   GRID VS FLEXBOX: Flexbox (Exercise 02) arranges items along ONE
+   axis — a row, or a column. Grid arranges items along TWO axes at
+   once — rows AND columns together — which is why it's the natural
+   fit for a card layout instead of a single line of items.
+
+   display: grid;
+   grid-template-columns: repeat(3, 1fr); (three equal columns)
+   gap: 1rem; */
+.skills-grid {
+
+}
+
+/* TODO: give each .skill-card padding and a border or background
+   colour so it reads as a "card." Try var(--grey-light) or
+   var(--electric-blue) for the border, var(--radius) for corners. */
+.skill-card {
+
+}

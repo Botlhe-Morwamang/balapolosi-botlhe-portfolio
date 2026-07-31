@@ -1,0 +1,75 @@
+/* Exercise 01: CSS Styling Basics */
+
+/* TODO: Define your colours and fonts once, here, so you can reuse them
+   everywhere with var(--name) instead of retyping the same value.
+   These values match the bootcamp's brand guide (docs/brand-guide.md) —
+   feel free to pick your own instead, same idea either way. */
+:root {
+  --navy: #0a0e1a;
+  --electric-blue: #2f6fed;
+  --white: #ffffff;
+  --grey-light: #f2f4f8;
+  --grey-text: #4a5568;
+  --radius: 10px;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+/* TODO (element selector): set a background colour and text colour on
+   body using your variables above. Check there's enough contrast to
+   read comfortably — DevTools will warn you if there isn't. */
+body {
+
+}
+
+/* TODO: set the body font too */
+
+
+/* TODO (element selector, grouped): give headings the heading font —
+   a different font for headings vs. body text is a deliberate,
+   common design choice, not a mistake
+
+
+/* TODO: add padding to <section> so content isn't jammed against
+   the browser edges.
+
+   BOX MODEL CHECK: padding adds space INSIDE an element, between its
+   border and its content — the section itself gets bigger, and the
+   background colour extends into that space. margin adds space
+   OUTSIDE an element, between it and its neighbours — the background
+   colour does NOT extend into a margin. Try both on a <section> in
+   DevTools and watch which one moves the background edge and which
+   doesn't. */
+section {
+
+}
+
+/* TODO (class selector): .logo already exists in your HTML on the
+   div wrapping your name in the nav. Give it a distinct look */
+.logo {
+
+}
+
+/* CASCADE CHECK — uncomment both lines below and reload the page.
+   Before checking DevTools, guess which colour will actually show up
+   on body text. Then open DevTools, click the body text, and look at
+   the Styles panel: which rule has a line through it (overridden),
+   and which one is winning? Same selector, same specificity — so the
+   rule that's LAST in the file wins. */
+
+/*
+body { color: black; }
+body { color: navy; }
+*/
+
+/* MEDIA QUERY AWARENESS (no action needed yet — homework covers this):
+   a media query is a conditional CSS block that only applies when the
+   browser window matches some condition, most often a width:
+
+   @media (max-width: 600px) { ... }
+
+   Anything inside only applies below 600px wide. Open DevTools now,
+   toggle the device toolbar (phone/tablet icon), and drag the width
+   down — notice the nav and Hero text don't rearrange themselves yet.
+   That's expected today; it's exactly what a media query would fix,
+   and it's what the Responsive Challenge homework covers. */

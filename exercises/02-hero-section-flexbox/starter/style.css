@@ -1,0 +1,44 @@
+/* Continues from Exercise 01 — keep your :root variables and
+   body/font/section rules from Exercise 01's stylesheet; this file
+   only adds the Hero-specific rules on top of those. */
+
+/* Exercise 02: Hero Section (Flexbox) */
+
+/* TODO: make .hero a flex container: display: flex;
+   Then use align-items and justify-content to position
+   .hero-text and .hero-image the way you want relative to each other. */
+.hero {
+
+}
+
+/* FLEXBOX CHECK: display: flex only changes how .hero's DIRECT
+   CHILDREN (.hero-text and .hero-image) behave — it doesn't touch
+   anything inside them. flex-direction: row (the default) lays them
+   out left-to-right; flex-direction: column stacks them top-to-bottom.
+   Try switching it in DevTools and watch what moves. */
+
+/* TODO (optional): give .hero-text and .hero-image a flex value so
+   neither one dominates the row, e.g. flex: 1; on both. */
+.hero-text {
+
+}
+
+.hero-image {
+
+}
+
+/* TODO: style the CTA button in two parts, on purpose:
+
+   .btn holds the SHAPE — padding, border-radius (try var(--radius)),
+   cursor, no border. Any future button reuses this.
+
+   .btn-primary holds the COLOUR — background var(--electric-blue),
+   text colour var(--white). A second button with a different colour
+   would get a .btn-secondary instead of repeating the shape rules. */
+.btn {
+
+}
+
+.btn-primary {
+
+}

@@ -1,0 +1,61 @@
+/* ===== From Exercise 01 ===== */
+:root {
+  --navy: #0a0e1a;
+  --electric-blue: #2f6fed;
+  --white: #ffffff;
+  --grey-light: #f2f4f8;
+  --grey-text: #4a5568;
+  --radius: 10px;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+body {
+  background: var(--white);
+  color: var(--navy);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+}
+
+section {
+  padding: 2rem 1.5rem;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--electric-blue);
+}
+
+/* ===== Exercise 02: Hero Section (Flexbox) ===== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-image {
+  flex: 1;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--electric-blue);
+  color: var(--white);
+}

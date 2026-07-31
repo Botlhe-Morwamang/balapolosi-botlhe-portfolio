@@ -1,0 +1,42 @@
+/* Add this to your existing style.css — continues from Exercise 02 */
+
+/* Exercise 03: Dark Mode */
+
+/* TODO: define semantic tokens on body for LIGHT mode (the default),
+   pointing at your existing :root tokens. This is a naming layer —
+   nothing should change visually yet, you're just giving your colours
+   roles ("the current background") instead of fixed identities
+   ("white"). --card-border is a genuinely new value, not one of your
+   existing tokens: */
+body {
+  --bg: var(--white);
+  --bg-alt: var(--grey-light);
+  --text: var(--navy);
+  --text-muted: var(--grey-text);
+  --accent: var(--electric-blue);
+  --card-bg: var(--white);
+  --card-border: #e2e8f0;
+}
+
+/* TODO: go back through your body, .btn-primary, and .skill-card rules
+   and swap the raw tokens they use (var(--navy), var(--white),
+   var(--electric-blue)) for the semantic ones above (var(--text),
+   var(--bg), var(--accent)). Still nothing should look different. */
+
+/* TODO: now define DARK mode. This isn't just swapping bg and text —
+   a card the exact same navy as the page background disappears into
+   it, so dark mode needs genuinely new values: a card background a
+   shade lighter than the page background, a lighter accent blue for
+   contrast, and a muted (not pure white) text colour. Fill these in: */
+body.dark-mode {
+  --bg: var(--navy);
+  --bg-alt: /* a touch lighter than --navy, e.g. #121729 */;
+  --text: var(--white);
+  --text-muted: /* muted light grey-blue, e.g. #b8c0d4 */;
+  --accent: /* lighter than --electric-blue, e.g. #5b8dfd */;
+  --card-bg: /* same as --bg-alt above */;
+  --card-border: /* darker than --card-bg, e.g. #232b45 */;
+}
+
+/* TODO (optional but nice): smooth transition instead of an instant
+   snap when the theme changes. Add to your existing body rule */

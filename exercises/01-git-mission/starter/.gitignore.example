@@ -1,0 +1,17 @@
+# TODO: rename this file to ".gitignore" (remove the .example) inside your portfolio folder
+# before your first commit.
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+*.swp
+
+# Will matter once you start the Flask homework below —
+# safe to leave in now even though you don't have these yet.
+__pycache__/
+*.pyc
+.env
+venv/

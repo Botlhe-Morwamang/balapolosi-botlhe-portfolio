@@ -1,0 +1,41 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+.project-card {
+  background-color: rgb(235, 235, 235);
+  border-radius: 8px;
+  border: 1px solid Gray;
+  padding: 1rem;
+}
+.project-card img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  width: 100%;
+}
+.tech-tags {
+  font-size: 0.85rem;
+  color: gray;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+.project-card {
+    background-color: rgb(235, 235, 235);
+    border-radius: 8px;
+    border: 1px solid gray;
+    padding: 1rem;
+}
+.project-card img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    width: 100%;
+}
+.tech-tags {
+    font-size: 0.85rem;
+    color: gray;
+}
