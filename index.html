@@ -46,27 +46,35 @@
     <h2>Projects</h2>
     <div class="projects-grid">
         <article class="project-card">
-            <img src="https://placehold.co/400x225" alt="GIS Kgalagadi Borehole Mapping screenshot">
+            <img src="gis-project.jpg" alt="GIS Kgalagadi Borehole Mapping screenshot">
             <h3>GIS Kgalagadi Borehole Mapping</h3>
             <p>ArcGIS Pro spatial analysis of borehole sites across the Kgalagadi region.</p>
             <p class="tech-tags">GIS · ArcGIS Pro · Spatial Analysis</p>
-            <a href="#">View Project</a>
+            <a href="Kgalagadi-Presentation.pdf" target="_blank">View Project</a>
         </article>
 
         <article class="project-card">
-            <img src="https://placehold.co/400x225" alt="Soil Erosion Assessment screenshot">
-            <h3>Soil Erosion Assessment</h3>
-            <p>Assessment of soil erosion patterns in the Kgalagadi region.</p>
+            <img src="soil-salinity-project.jpg" alt="Impact of salinity in crops and soil screenshot">
+            <h3>Impact of salinity in crops and soil</h3>
+            <p>Assessment of soil salinity patterns in Glen Valley Farms.</p>
             <p class="tech-tags">Soil Science · Field Assessment</p>
-            <a href="#">View Project</a>
+            <a href="Impact-of-salinity-in-crops-and-soil-in-Green-Globe.pdf" target="_blank">View Project</a>
         </article>
 
         <article class="project-card">
-            <img src="https://placehold.co/400x225" alt="Water Quality Monitoring screenshot">
+            <img src="water-quality-project.jpg" alt="Water Quality Monitoring screenshot">
             <h3>Water Quality Monitoring</h3>
-            <p>Monitoring and analysis of water quality in local water bodies.</p>
+            <p>Monitoring and analysis of water quality.</p>
             <p class="tech-tags">Water Quality · Field Sampling</p>
-            <a href="#">View Project</a>
+            <a href="IRRIGATION-AND-WATER-QUALITY-REPORT-FOR-ELECTRICAL-CONDUCTIVITY-AND-pH.pdf" target="_blank">View Project</a>
+        </article>
+
+        <article class="project-card">
+            <img src="water-treatment-project.jpg" alt="Water Treatment screenshot">
+            <h3>Water Treatment</h3>
+            <p>Design and implementation of a water treatment system.</p>
+            <p class="tech-tags">Water Treatment · Engineering Design</p>
+            <a href="water-treatment-project.pdf" target="_blank">View Project</a>
         </article>
     </div>
 </section>
@@ -78,19 +86,26 @@
         <div class="skill-card">Teamwork and Communication</div>
         <div class="skill-card">Occupational Health and Safety Practices</div>
         <div class="skill-card">Water Resources Engineering</div>
-        <div class="skill-card">Web Development-HTML,CSS,JavaScript</div>
+        <div class="skill-card">Web Development - HTML, CSS, JavaScript</div>
     </div>
-    </section>  
+</section>
 <section id="contact">
     <h2>Contact</h2>
     <p><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:morwamangbotlhe@gmail.com">morwamangbotlhe@gmail.com</a></p>
     <p><i class="fa-solid fa-phone"></i> Number: <a href="tel:+26773236118 / +267 74818612">+267 73236118 / +267 74818612</a></p>
     <p><i class="fa-brands fa-linkedin"></i> Linkedin: <a href="https://www.linkedin.com/in/balapolosi-botlhe-morwamang-22b081265">Balapolosi Botlhe Morwamang</a></p>
 
-    <form id="contact-form">
-        <input type="text" id="name" placeholder="Your name">
-        <input type="text" id="email" placeholder="Your email">
-        <textarea id="message" placeholder="Your message"></textarea>
+    <form id="contact-form" action="https://formsubmit.co/morwamangbotlhe@gmail.com" method="POST">
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+        <textarea id="message" name="message" placeholder="Your message" required></textarea>
+
+        <!-- Spam protection -->
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Portfolio Contact">
+        <input type="hidden" name="_template" value="table">
+
         <button type="submit">Send</button>
         <p id="form-error"></p>
     </form>

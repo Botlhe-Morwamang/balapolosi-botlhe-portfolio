@@ -16,10 +16,11 @@ let themeButton = document.getElementById("theme-toggle");
 themeButton.addEventListener("click", function() {
     document.body.classList.toggle("dark-mode");
 });
+
 const form = document.querySelector('#contact-form');
 
 form.addEventListener('submit', function (event) {
-    event.preventDefault(); // stops the page from reloading
+    event.preventDefault();
 
     const name = document.querySelector('#name').value;
     const email = document.querySelector('#email').value;
@@ -41,5 +42,22 @@ form.addEventListener('submit', function (event) {
         return;
     }
 
-    errorBox.textContent = "Thanks! (This form doesn't actually send anywhere yet — that comes with Flask in Mission 04.)";
+    errorBox.textContent = "Sending...";
+
+    fetch("https://formsubmit.co/ajax/morwamangbotlhe@gmail.com", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        },
+        body: JSON.stringify({ name, email, message })
+    })
+        .then(response => response.json())
+        .then(data => {
+            errorBox.textContent = "Thanks! Your message has been sent.";
+            form.reset();
+        })
+        .catch(error => {
+            errorBox.textContent = "Something went wrong: " + error;
+        });
 });
