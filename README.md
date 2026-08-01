@@ -5,7 +5,7 @@ A responsive, professional portfolio website built as my final project for X3 La
 Mission: Genesis bootcamp. It showcases my background as a Soil and Water Conservation 
 Engineering student, my technical projects, and provides a working way for visitors 
 to get in touch.
- 
+**Live:**(https://botlhe-morwamang.github.io/balapolosi-botlhe-portfolio/#)
 **Repository:** (https://github.com/Botlhe-Morwamang/balapolosi-botlhe-portfolio.git)
 
 ## Features
