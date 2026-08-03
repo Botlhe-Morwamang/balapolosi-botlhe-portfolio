@@ -1,6 +1,9 @@
 :root {
     --electric-blue: rgba(123, 149, 197, 0.712);
 }
+html {
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
